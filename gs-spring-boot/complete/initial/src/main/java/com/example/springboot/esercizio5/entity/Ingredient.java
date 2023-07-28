@@ -14,6 +14,8 @@ public class Ingredient {
     private boolean isVegan;
     private boolean isGlutenFree;
     private boolean isLactoseFree;
+    @ManyToOne
+    private Meal meal;
 
     public Ingredient(String name, boolean isVegetarian, boolean isVegan, boolean isGlutenFree, boolean isLactoseFree) {
         this.name = name;
